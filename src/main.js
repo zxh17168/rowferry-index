@@ -31,7 +31,11 @@ const status = document.querySelector('#notes-status');
 const exportButton = document.querySelector('#export');
 const clearButton = document.querySelector('#clear');
 const key = 'rowferry.index.chromatic-drift.notes.v1';
-const format = time => `${Math.floor(time / 60).toString().padStart(2, '0')}:${Math.floor(time % 60).toString().padStart(2, '0')}`;
+const format = time => {
+  // Media seeks may land just below a whole second (11.999999...).
+  const seconds = Math.max(0, Math.floor(time + 0.001));
+  return `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`;
+};
 let notes = [];
 try {
   const saved = JSON.parse(localStorage.getItem(key) || '[]');
