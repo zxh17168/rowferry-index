@@ -4,6 +4,8 @@
 
 An original Video.js 10 skin by RowFerry. A ruled timeline and opaque paper dock keep the player readable; timestamped notes help viewers return to a moment without an account.
 
+![Index desktop demo with a saved timestamped note](submission-visual.png)
+
 Built for the Video.js Skins Design Challenge, closing November 16, 2026, 11:59pm Pacific. This is a prepared entry, not an accepted submission, client project or prize award.
 
 ## Run
