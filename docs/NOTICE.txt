@@ -1,0 +1,4 @@
+Index — an original Video.js 10 skin and procedural film
+Copyright 2026 RowFerry
+Licensed under the Apache License, Version 2.0.
+Video.js and bundled dependencies retain their respective licenses.

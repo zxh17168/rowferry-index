@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f0eee5" />
+  <meta name="description" content="Index, an original Video.js 10 skin by RowFerry. Keep a moment, return to it, take your notes with you." />
+  <title>Index — Keep the good bits. · RowFerry</title>
+  <link rel="icon" type="image/svg+xml" href="./mark.svg" />
+  <script type="module" crossorigin src="./assets/index-BJ7qWtPo.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BZOThhRj.css">
+</head>
+<body>
+  <a class="skip" href="#player">Skip to player</a>
+  <header class="masthead"><a href="https://ko-fi.com/rowferry" class="wordmark">RowFerry<span aria-hidden="true">↗</span></a><span class="edition">PLAYER STUDIES / 001</span><a class="about-link" href="#about">About Index <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> INDEX / A VIDEO.JS 10 SKIN</div>
+      <div class="intro-grid"><h1 id="title">Keep the<br /><em>good bits.</em></h1><p>Some moments deserve<br />a second look.<br /><span>A player that remembers where.</span></p></div>
+    </section>
+    <section class="studio" aria-label="Index player and saved moments">
+      <div class="player-sheet">
+        <div class="sheet-label"><span>01 / CHROMATIC DRIFT</span><span>ORIGINAL MOTION STUDY · 00:18</span></div>
+        <video-player id="player" aria-label="Chromatic Drift video player">
+          <media-container class="index-skin">
+            <div class="picture">
+              <video id="film" src="./chromatic-drift.mp4" poster="./poster.svg" playsinline preload="metadata" aria-label="Chromatic Drift: an abstract moving colour study">
+                <track kind="captions" src="./captions.vtt" srclang="en" label="English" default />
+              </video>
+              <span class="picture-label" aria-hidden="true">CHROMATIC<br />DRIFT</span>
+              <div class="picture-number" aria-hidden="true">I.</div>
+            </div>
+            <media-controls>
+              <media-controls-content class="control-dock">
+                <div class="ruler" aria-hidden="true"><span>00</span><span>03</span><span>06</span><span>09</span><span>12</span><span>15</span><span>18</span></div>
+                <media-time-slider class="timeline" aria-label="Seek video">
+                  <media-slider-track class="track"><media-slider-buffer class="buffer"></media-slider-buffer><media-slider-fill class="fill"></media-slider-fill></media-slider-track>
+                  <media-slider-thumb class="thumb"></media-slider-thumb>
+                </media-time-slider>
+                <media-controls-group class="transport" aria-label="Playback controls">
+                  <media-play-button class="control play"><span class="paused"><span aria-hidden="true">▶</span> Play</span><span class="playing"><span aria-hidden="true">Ⅱ</span> Pause</span></media-play-button>
+                  <span class="clock"><media-time type="current"></media-time><span class="clock-divider" aria-hidden="true">/</span><media-time type="duration"></media-time></span>
+                  <span class="transport-spacer"></span>
+                  <media-captions-button class="control captions">CC</media-captions-button>
+                  <media-mute-button class="control mute"><span class="muted">Sound off</span><span class="unmuted">Sound on</span></media-mute-button>
+                  <media-volume-slider class="volume" aria-label="Volume"><media-slider-track class="track"><media-slider-fill class="fill"></media-slider-fill></media-slider-track><media-slider-thumb class="thumb"></media-slider-thumb></media-volume-slider>
+                  <media-fullscreen-button class="control fullscreen"><span class="enter-fullscreen">Expand <span aria-hidden="true">⤢</span></span><span class="exit-fullscreen">Close <span aria-hidden="true">⤡</span></span></media-fullscreen-button>
+                </media-controls-group>
+              </media-controls-content>
+            </media-controls>
+            <media-hotkey keys="Space" action="togglePaused"></media-hotkey><media-hotkey keys="m" action="toggleMuted"></media-hotkey><media-hotkey keys="f" action="toggleFullscreen"></media-hotkey><media-hotkey keys="ArrowLeft" action="seekStep" value="-5"></media-hotkey><media-hotkey keys="ArrowRight" action="seekStep" value="5"></media-hotkey>
+            <media-status-announcer></media-status-announcer>
+            <media-error-dialog><media-dialog-popup class="error"><media-dialog-title></media-dialog-title><media-dialog-description></media-dialog-description><media-dialog-close>Close</media-dialog-close></media-dialog-popup></media-error-dialog>
+          </media-container>
+        </video-player>
+        <div class="player-foot"><span><span class="key">SPACE</span> play / pause <span class="key">← →</span> seek</span><span>LOOK CLOSELY. COME BACK LATER.</span></div>
+      </div>
+      <aside class="notebook" aria-labelledby="notes-title">
+        <div class="notebook-top"><span class="eyebrow">YOUR FIELD NOTES</span><span class="note-count" id="note-count">00</span></div>
+        <h2 id="notes-title">Worth<br /><em>keeping.</em></h2>
+        <p class="notes-intro">Save a time, add a thought.<br />Click a saved moment to return.</p>
+        <form id="mark-form"><label for="note">A note for this moment <span>(optional)</span></label><textarea id="note" maxlength="160" rows="2" placeholder="That colour. That transition…"></textarea><button class="save" type="submit"><span aria-hidden="true">＋</span> Keep this moment <span id="save-time">00:00</span></button></form>
+        <div id="notes-status" class="notes-status" role="status" aria-live="polite"></div>
+        <p id="empty-notes" class="empty-notes">Nothing kept. Yet.<br /><span>Your next favourite frame is in there.</span></p>
+        <ol id="notes-list" class="notes-list"></ol>
+        <div class="notes-actions"><button id="export" type="button" disabled>Export notes <span aria-hidden="true">↗</span></button><button id="clear" type="button" disabled>Clear all</button></div>
+        <p class="privacy">Saved in this browser only. Export to keep a copy.</p>
+      </aside>
+    </section>
+    <section id="about" class="about" aria-labelledby="about-title"><p class="eyebrow">A SMALL IDEA, CAREFULLY MADE</p><h2 id="about-title">Less searching.<br /><em>More seeing.</em></h2><div><p>Index treats a video like a page worth annotating. Its ruled timeline and solid paper dock keep playback clear, even when the picture changes from light to dark. The notebook gives the moments you care about somewhere to live.</p><p>Built on Video.js 10. No account, no analytics, no remote note storage. Keyboard-friendly controls, generous touch targets, and motion that respects your preferences.</p><a href="https://ko-fi.com/rowferry">Made by Nathan / RowFerry <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><span>INDEX / PLAYER STUDIES</span><span>Original film & skin · <a href="./LICENSE.txt">Apache-2.0</a> · <a href="./THIRD-PARTY-NOTICES.txt">Credits</a></span><a href="https://github.com/zxh17168/rowferry-index">Source ↗</a><span>2026 · RowFerry</span></footer>
+</body>
+</html>

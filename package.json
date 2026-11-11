@@ -1,0 +1,14 @@
+{
+  "name": "rowferry-index-skin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build --base=./",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {"@videojs/html": "10.3.0"},
+  "devDependencies": {"vite": "8.3.8"}
+}
