@@ -86,7 +86,7 @@ form.addEventListener('submit', event => {
 });
 film.addEventListener('timeupdate', () => { document.querySelector('#save-time').textContent = format(film.currentTime); });
 exportButton.addEventListener('click', () => {
-  const blob = new Blob([JSON.stringify({title: 'Chromatic Drift', source: 'Index / RowFerry', notes: [...notes].sort((a, b) => a.time - b.time)}, null, 2) + '\n'], {type: 'application/json'});
+  const blob = new Blob([JSON.stringify({title: 'Chromatic Drift', source: 'Index / Fixstride', notes: [...notes].sort((a, b) => a.time - b.time)}, null, 2) + '\n'], {type: 'application/json'});
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;

@@ -2,7 +2,7 @@
 
 [Live demo](https://zxh17168.github.io/rowferry-index/) · [Source](https://github.com/zxh17168/rowferry-index)
 
-An original Video.js 10 skin by RowFerry. A ruled timeline and opaque paper dock keep the player readable; timestamped notes help viewers return to a moment without an account.
+An original Video.js 10 skin by Fixstride. A ruled timeline and opaque paper dock keep the player readable; timestamped notes help viewers return to a moment without an account.
 
 ![Index desktop demo with a saved timestamped note](submission-visual.png)
 
@@ -40,6 +40,6 @@ Index takes its cues from an annotated page rather than a cinema remote. The pic
 
 ## License and assets
 
-Original skin, source, vector marks and generated film: Apache-2.0, copyright 2026 RowFerry. See LICENSE. Video.js is an independent open-source project; this demo is not an endorsement. Fonts are DM Sans and DM Serif Display via Google Fonts under their respective SIL Open Font Licenses; system fonts are fallbacks. The site has no analytics or remote note storage.
+Original skin, source, vector marks and generated film: Apache-2.0, copyright 2026 RowFerry (now trading as Fixstride). See LICENSE. Video.js is an independent open-source project; this demo is not an endorsement. Fonts are DM Sans and DM Serif Display via Google Fonts under their respective SIL Open Font Licenses; system fonts are fallbacks. The site has no analytics or remote note storage.
 
 Codex was used to implement the entry and run local/native-browser checks. No Mux account, promotional credit, trial, paid hosting or prize income has been claimed.
