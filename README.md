@@ -43,3 +43,5 @@ Index takes its cues from an annotated page rather than a cinema remote. The pic
 Original skin, source, vector marks and generated film: Apache-2.0, copyright 2026 RowFerry (now trading as Fixstride). See LICENSE. Video.js is an independent open-source project; this demo is not an endorsement. Fonts are DM Sans and DM Serif Display via Google Fonts under their respective SIL Open Font Licenses; system fonts are fallbacks. The site has no analytics or remote note storage.
 
 Codex was used to implement the entry and run local/native-browser checks. No Mux account, promotional credit, trial, paid hosting or prize income has been claimed.
+
+Contact Nathan / Fixstride: [hello.fixstride@gmail.com](mailto:hello.fixstride@gmail.com).
